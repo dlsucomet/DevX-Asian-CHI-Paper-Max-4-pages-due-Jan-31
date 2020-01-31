@@ -189,46 +189,13 @@ DevOps is usually an industry approach that is practiced by seasoned and experie
 \begin{comment}
 Please use the 2012 Classifiers and see this link to embed them in the text: \url{https://dl.acm.org/ccs/ccs_flat.cfm}
 \end{comment}
-\section{Introduction}
-%Answer each question in two to three sentences
-
-% describe novice programmers?
-
-% where are they found? do they work in teams? what are examples of typical tasks of novice programmers? do they have opportunities or venues to program in teams given their novice learning? 
-
-% Based on your opinion, what are the typical struggles or pains of novice programmers when it comes to working on big projects? (their MPs?) if you can cite some papers that share these struggles, cite them. 
-%
-
-Novice programmers are individuals that are starting to learn how to program. They tackle lessons on basic programming concepts such as data types and structures, algorithms. In practice, they approach terms in algorithms in a concrete manner rather than abstract \cite{mccarthygame}. As such, the learning process becomes more process-centric rather than something high level\cite{teague2014longitudinal}. Novice programmers are mostly found in university classrooms attending introductory programming courses. These courses tend to focus on an individual's logic formulation skills and understanding basic programming concepts. The problems they tackle usually require the proper application of these basic programming concepts taught to them in class. In general, computer programming has been traditionally taught and practiced as an individual activity even though software development tasks are done through collaboration \cite{mcdowell2002effects} as they move to bigger projects that have a broader scope in terms of features. 
-In terms of outputs and expectations, novice programmers are expected to produce deliverables usually done individually or in pairs. When working on bigger projects, novice programmers often struggle on dividing tasks into small segments. They tend to look at the overall task as a whole and solve different tasks simultaneously. We want to find out if they have innate practices in managing file and code versions among multiple collaborators. Aside from this, they also suffer from a rangle of struggles that are either cognitive, social development, external commitments and cultural perceptions which have lead these novice learners to poor performance in programming\cite{teague2008collaborative}. On an additional note, students are introduced to Software Engineering usually at their early or late junior years and most of the time, DevOps is not included in the course coverage \cite{bass2016software}. There are already recent studies that push the introducing DevOps in curriculums \cite{bruel2019software, jones2018proposal}. In this paper we: (1) attempt to Measure and Assess what initial knowledge novice programmers have about DevOps. We do this investigation in reference to the CALMS model as introduced by \cite{riley2014keep}. We also attempt to (2) Analyze the different opinions of both novice programmers and expert practitioners with regards to DevOps. We can do this thru affinity mapping in order to discover what possible interventions we can introduce to help them in their pains and struggles. Lastly, we (3) reflect on how we can design and evaluate a tool to that will support novice programmers towards adopting DevOps in their practice. 
-
-
-\section{Related Work}
-\subsection{Studies on DevOps Assessment and Novice Support}
-%What is paper 05 about? What did it do? What was the research focus/question of paper 05? What did paper 05 do that we will be adopting in our paper? What needs improvement in paoer 05 that we will be improving in our paper?
-%PAPER 6 and 7 di ko talaga kaya paper 5 :((( 
-% oki gotchu
-Teague et. al. \cite{teague2008collaborative} evaluated collaborative learning between novice programmers and found that collaborative learning enhances their perception of programming’s difficulty, their enjoyment, and their confidence. This leads to higher retention, deeper learning, and enhanced confidence when learning programming concepts. These perceptions are also influenced by different aspects such as gender, domain knowledge, experience and stereotypes. This is supported by Tissenbaum \cite{tissenbaum2020see} when they found users shift from unproductive to productive states using the DCLM framework. They found that interactions with others play an important role in transitioning to productive states. Wherein others’ being able to inspect and interact with their work help them transition out of unproductive states.
-
-
-
-
-%Answer the same set of questions for paper 06 and paper 07. 3-4 sentences each. you can use your answers in the .txt you submitted. 
-
-
-
-
-
-\subsection{The CALMS Model in DevOps}
-
-insert a figure of the CALMS model if possible >> no need for this dami na natin figures later on
-
-%What is the CALMS model? From what paper was it cited? What other papers cited the CALMS model? (you can siply mention the papers that cited it. check the cited by section in google scholar. 
-
-%New paragraph, in our paper, will we be using all the CALMS? what will we be using? 
+\section{Introduction and Related Work}
+Novice programmers are individuals that are starting to learn how to program. They tackle lessons on basic programming concepts such as data types and structures, algorithms. In practice, they approach terms in algorithms in a concrete manner rather than abstract \cite{mccarthygame}. As such, the learning process becomes more process-centric rather than something high level \cite{teague2014longitudinal}. Novice programmers are mostly found in university classrooms attending introductory programming courses. These courses tend to focus on an individual's logic formulation skills and understanding basic programming concepts. The problems they tackle usually require the proper application of these basic programming concepts taught to them in class. In general, computer programming has been traditionally taught and practiced as an individual activity even though software development tasks are done through collaboration \cite{mcdowell2002effects} as they move to bigger projects that have a broader scope in terms of features. 
+In terms of outputs and expectations, novice programmers are expected to produce deliverables usually done individually or in pairs. When working on bigger projects, novice programmers often struggle on dividing tasks into small segments. They tend to look at the overall task as a whole and solve different tasks simultaneously. We want to find out if they have innate practices in managing file and code versions among multiple collaborators. Aside from this, they also suffer from a rangle of struggles that are either cognitive, social development, external commitments and cultural perceptions which have lead these novice learners to poor performance in programming \cite{teague2008collaborative}. On an additional note, students are introduced to Software Engineering usually at their early or late junior years and most of the time, DevOps is not included in the course coverage \cite{bass2016software}. There are already recent studies that push the introducing DevOps in curriculums \cite{bruel2019software, jones2018proposal}.
+Teague et. al. \cite{teague2008collaborative} evaluated collaborative learning between novice programmers and found that collaborative learning enhances their perception of programming’s difficulty, their enjoyment, and their confidence. This leads to higher retention, deeper learning, and enhanced confidence when learning programming concepts. These perceptions are also influenced by different aspects such as gender, domain knowledge, experience and stereotypes. This is supported by Tissenbaum \cite{tissenbaum2020see} when they found users shift from unproductive to productive states using the DCLM framework. They found that interactions with others play an important role in transitioning to productive states. Wherein others’ being able to inspect and interact with their work help them transition out of unproductive states. In this paper we: (1) attempt to Measure and Assess what initial knowledge novice programmers have about DevOps. We do this investigation in reference to the CALMS model as introduced by \cite{riley2014keep}. We also attempt to (2) Analyze the different opinions of novice programmers with regards to integrating DevOps in their processes. We can do this thru affinity and scenario mapping in order to discover what possible interventions we can introduce to help them in their pains and struggles. Lastly, we (3) reflect on how we can design and evaluate a tool to that will support novice programmers towards adopting DevOps in their practice.
 
 \section{Method}
-The general methodology of this research follows the Design Science Methodology by \cite{peffers2007design}. This can be seen in Figure \ref{fig:framework}. 
+The general methodology of this research follows the Design Science Methodology by \cite{peffers2007design}. The process of extracting insights and deriving guidelines for novices were follows the work of \cite{nodalo2019building}. This can be seen in Figure \ref{fig:framework}. 
 \begin{figure}
     \centering
     \includegraphics[scale=0.275]{figures/"DevOpsX Design".png}
@@ -243,93 +210,35 @@ We recruited at least 50 novice programmers as participants thru convenience and
 The participants answered a questionnaire that collected their demographic information. A semi-structured quantitative approach took place in order to: (1) perform a diagnostic measuring the initial knowledge of novice programmers, (2) assess their openness towards learning DevOps and to (3) record their insights on learning about DevOps thru the experiment. We then did a post-survey interview with some of the respondents to further understand most especially the notable answers submitted thru the questionnaire. 
 
 \subsection{Data Analysis}
-We shall do a mixed-methods approach in processing the results of the survey. We shall do a combination of qualitative and quantitative analysis on the insights from the respondents. First, we want to investigate how novice programmers are receptive of the practice of DevOps and also on how much they do and they do not know about it. For this, we looked into their answers in the survey and compared it with the insights from the interview with the DevOps expert resource. 
+We shall do a mixed-methods approach in processing the results of the survey. We shall do a combination of qualitative and quantitative analysis on the insights from the respondents. First, we want to investigate how novice programmers are receptive of the practice of DevOps and also on how much they do and they do not know about it. For this, we looked into their answers in the survey and did a pair-wise analysis of their responses from the questions. 
 
-\textit{Affinity Mapping}. The questionnaire was developed following the CALMS model by \cite{riley2014keep}. The questions were sorted based on each of the factors described. We can easily pull and categorize their insights based on the different factors as organized with the help of the CALMS model. We applied affinity mapping to be able to sort and rank the problems that we can to ultimately support by the latter part of this research. 
-
-\textit{Statistical Treatment}. Since most of the responses are numeric and in Likert Scale values, the values can be analyzed by finding relationships and understanding correlations among the different factors as specified by the CALMS model. 
-\subsection{Prototyping}
+\textit{Affinity and Scenario Mapping}. The questionnaire was developed following the CALMS model by \cite{riley2014keep}. The questions were sorted based on each of the factors described. We can easily pull and categorize their insights based on the different factors as organized with the help of the CALMS model. We applied affinity mapping to be able to sort and rank the problems that we can to ultimately support by the latter part of this research. From this, we derived ideas and compared with existing DevOps tools. After a brainstorming and mapping session we designed features into a high fidelity mockup that will be tested and evaluated iteratively by its target users. 
 
 \section{Results and Findings}
 
-\begin{comment}
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[]
-\caption[protected]{Participant Demographic and Experience Profile. NCR: National Capital Region is a special administrative region in the Philippine capital. Laguna and Pampanga are administrative provinces in the Philippines.}
-\begin{tabular}{@{}lllll@{}}
-\toprule
-Participant &
-  \begin{tabular}[c]{@{}l@{}}Programming \\ Years\end{tabular} &
-  \multicolumn{2}{l}{\begin{tabular}[c]{@{}l@{}}Prior \\ Programming \\ Training\\ (JHS, SHS)\end{tabular}} &
-  Domicile \\ \midrule
-P1, ?, ?   & un   & un  & un  & un                \\
-P2, ?, ?   & un   & un  & un  & un                \\
-P3, ?, ?   & un   & un  & un  & un                \\
-P4, 17, M  & 0-5  & JHS & x   & Taguig, NCR       \\
-P5, ?, F   & un   & x   & x   & un                \\
-P6, 17, M  & 0-5  & x   & x   & Quezon City, NCR  \\
-P7, 20, M  & 0-5  & JHS & SHS & Las Pinas, NCR    \\
-P8, 19, M  & 0-5  & JHS & x   & Manila, NCR       \\
-P9, 21, M  & 0-5  & JHS & x   & Manila, NCR       \\
-P10, 19, M & 0-5  & x   & SHS & Marikina, NCR     \\
-P11, 19, M & 0-5  & JHS & SHS & Sta. Rosa, Laguna \\
-P12, 19, M & 0-5  & JHS & SHS & Sta. Rosa, Laguna \\
-P13, 19, M & 0-5  & JHS & SHS & San Pedro, Laguna \\
-P14, 18, M & 0-5  & JHS & SHS & Manila, NCR       \\
-P15, 18, M & 0-5  & JHS & SHS & Las Pinas, NCR    \\
-P16, 21, F & 0-5  & x   & x   & Las Pinas, NCR    \\
-P17, 20, M & 0-5  & JHS & x   & Muntinlupa, NCR   \\
-P18, 18, M & 0-5  & x   & x   & Las Pinas, NCR    \\
-P19, 20, M & 5-10 & JHS & SHS & Binan, Laguna     \\
-P20, 20, F & 0-5  & JHS & x   & Las Pinas, NCR    \\
-P21, 19, F & 0-5  & x   & SHS & Las Pinas, NCR    \\
-P22, 20, M & 0-5  & JHS & SHS & Muntinlupa, NCR   \\
-P23, 18, M & 0-5  & x   & SHS & Angeles, Pampanga \\
-P24, 19, M & 0-5  & JHS & x   & San Pedro, Laguna \\
-P25, 24, M & 0-5  & x   & x   & Paranaque, NCR    \\
-P26, 19, M & 0-5  & JHS & SHS & Manila, NCR       \\
-P27, 19, M & 5-10 & JHS & SHS & Binan, Laguna     \\
-P28, 18, F & 0-5  & JHS & SHS & Manila, NCR       \\
-P29, 21, M & 0-5  & x   & x   & Las Pinas, NCR    \\
-P30, 20, F & 0-5  & x   & x   & Bacoor, Cavite    \\
-P31, 18, F & 0-5  & JHS & SHS & Manila, NCR       \\
-P32, 21, M & 0-5  & JHS & x   & Makati, NCR       \\
-P33, 18, F & 0-5  & JHS & x   & Manila, NCR       \\
-P34, 20, M & 0-5  & JHS & x   & Las Pinas, NCR    \\
-P35, 19, M & 5-10 & JHS & SHS & Manila, NCR       \\
-P36, 21, M & 0-5  & x   & x   & Las Pinas, NCR    \\
-P37, 21, F & 0-5  & x   & SHS & San Juan, NCR     \\
-P38, 20, M & 0-5  & JHS & x   & Las Pinas, NCR    \\
-P39, 19, M & 0-5  & x   & x   & Sta. Rosa, Laguna \\
-P40, 19, M & 0-5  & x   & SHS & Las Pinas, NCR    \\
-P41, 20, M & 0-5  & JHS & x   & Muntinlupa, NCR   \\
-P42, 19, M & 0-5  & JHS & x   & Laguna            \\
-P43, 20, M & 0-5  & JHS & SHS & Binan, Laguna     \\
-P44, 19, M & 0-5  & JHS & x   & San Pedro, Laguna \\
-P45, 20, M & 0-5  & x   & x   & San Pedro, Laguna \\
-P46, 20, F & 0-5  & JHS & x   & Bacoor, Cavite    \\
-P47, 20, F & 0-5  & x   & SHS & Quezon City, NCR  \\
-P48, 20, F & 0-5  & JHS & x   & Caloocan, NCR     \\
-P49, 19, M & 0-5  & x   & x   & Las Pinas, NCR    \\
-P50, 20, F & 0-5  & x   & x   & Caloocan, NCR     \\
-P51, 22, M & 0-5  & x   & x   & San Juan, NCR     \\
-P52, 20, F & 0-5  & x   & SHS & Binan, Laguna     \\
-P53, 20, F & 0-5  & JHS & SHS & Manila, NCR       \\
-P54, 19, F & 0-5  & x   & x   & Las Pinas, NCR    \\ \bottomrule
-\end{tabular}
-\end{table}
-\end{comment}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.45]{figures/Figure_ConfidenceLevel.png}
+    \caption{General Confidence Level of Respondents}
+    \label{fig:genconf}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{figures/Figure_ProblemSolving.png}
+    \caption{Confidence Level of Respondents when it comes to Problem-Solving}
+    \label{fig:probsol}
+\end{figure}
+
+Based on Fig. \ref{fig:genconf}, more than half of the respondents are confident in working regardless of whether they are alone, with a partner, or on a team. However, most respondents prefer having more people to work with than to be alone.  In contrast to this, their confidence plummets when asked about their capabilities in problem-solving. As seen in the \ref{fig:probsol}, 54\% find it more difficult to solve problems when working alone. In relation to this, majority of the respondents find it easier to work with respondents.
+
+% THIS IS FOR TRUST AND RESPECT AND KNOWLEDGE SHARING 
+With regards to the collaboration culture of DevOps, majority of the respondents (57.4\%) strongly perceived it as a platform for knowledge sharing and trust & respect. In addition, the respondents perceived DevOps as a collaborative process that involves pair programming and working in teams.  
 
 
-
-
-
-hello
-
-\subsection{Common Misconceptions by Filipino Novice Programmers}
-\subsection{Perceived Priority Areas based on User Insights}
-\subsection{Prior Programming Experience and DevOps Readiness}
+%\subsection{Common Misconceptions by Filipino Novice Programmers}
+%\subsection{Perceived Priority Areas based on User Insights}
+%\subsection{Prior Programming Experience and DevOps Readiness}
 
 \section{Discussion}
 hello
@@ -341,20 +250,20 @@ hello
 \begin{figure}
     \centering
     \includegraphics[scale=0.72]{figures/mockup1}
-    \caption{caption here }
+    \caption{Grit desktop}
     \label{fig:mockup}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.72]{figures/console1}
-    \caption{caption here }
+    \caption{Grit console}
     \label{fig:console}
 \end{figure}
 
-Upon analyzing the data gathered, we designed a prototype that is intended to help novice programmers in integrating DevOps in their projects and processes. We name this proposed system as \textit{Grit}, which shall serve as a platform to guide novice programmers starting out with DevOps. It shall have the regular features from Git but will be augmented with 6 main features namely: (1) \texit{Version Control module}, (2) Virtual Assistant, (3) Command Line with Predictive Text, (4) Coachmarks, (5) Practice with Codeblocks and a feature accessed only thru online called (6) Find-a-Coach. 
+Upon analyzing the data gathered, we designed a prototype that is intended to help novice programmers in integrating DevOps in their projects and processes. We name this proposed system as \textit{Grit}, which shall serve as a platform to guide novice programmers starting with DevOps. It shall have the regular features from Git but will be augmented with 6 main features namely: (1) \textit{Version Control module}, (2) Virtual Assistant, (3) Command-Line with Predictive Text, (4) Coachmarks, (5) Practice with Codeblocks and a feature accessed only through online called (6) Find-a-Coach. 
 
-See Fig. \ref{fig:mockup} to view these features. The Version control module is based from GitHub desktop which runs git commands such as pull, push, commit, and etc.The Virtual Assistant serves as guided walkthrough to the git commands and its functions. The Command line feature allows the users to call git commands with predictive text. The Coachmark enables first time users to navigate thru the system easily. The Practice with Codeblocks feature helps users to practice and understand the basic git commands. Lastly, the Find-a-Coach feature is an online mentoring tool that allows novices to find a mentor that will guide them in their DevOps process in real-time. With these proposed features, novices can be accustomed to the DevOps process but these can be verified thru further tests and experiments. 
+See Fig. \ref{fig:mockup} to view these features. The Version control module is based on GitHub desktop which runs git commands such as pull, push, and commit. The Virtual Assistant serves as a guided walkthrough to the git commands and its functions. Additionally, the Command-line feature allows the users to call git commands with predictive text. Likewise, the Coachmark enables first time users to navigate through the system easily. On the other hand, the practice with Codeblocks feature helps users to practice and understand the basic git commands. Lastly, the Find-a-Coach feature is an online mentoring tool that allows novices to find a mentor that will guide them in their DevOps process in real-time. With these proposed features, novices can be accustomed to the DevOps process but these can be verified through further tests and experiments. 
 
 
 
